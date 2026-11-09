@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ahmed Elsayed — Penetration Tester focused on web, mobile, and network security.">
+  <meta name="theme-color" content="#07111f">
+  <title>Ahmed Elsayed | Penetration Tester</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#07111f;--panel:#0d1b2c;--panel2:#102238;--text:#edf5ff;--muted:#9db0c5;--line:rgba(157,190,220,.16);--cyan:#55e6d0;--blue:#67a8ff;--glow:rgba(85,230,208,.14)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 78% 8%,rgba(34,104,147,.2),transparent 34%),radial-gradient(ellipse at 8% 38%,rgba(35,119,113,.12),transparent 30%),var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font:700 19px "Space Grotesk";letter-spacing:-.5px}.brand span{color:var(--cyan)}.navlinks{display:flex;gap:26px;color:var(--muted);font-size:13px}.navlinks a:hover{color:var(--cyan)}.menu{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:8px 11px;border-radius:10px}
+    .hero{padding:104px 0 88px;display:grid;grid-template-columns:1.25fr .75fr;gap:55px;align-items:center}.eyebrow{display:inline-flex;gap:9px;align-items:center;color:var(--cyan);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 14px var(--cyan)}h1,h2,h3,p{margin-top:0}h1{font:700 clamp(42px,6vw,70px)/1.06 "Space Grotesk";letter-spacing:-3px;margin:20px 0}.gradient{background:linear-gradient(100deg,var(--cyan),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}.lead{max-width:650px;color:var(--muted);font-size:17px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 18px;border-radius:11px;font-weight:700;font-size:13px;border:1px solid var(--line);transition:.2s}.btn.primary{background:linear-gradient(100deg,var(--cyan),#82c9ff);color:#061321;border:0}.btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px var(--glow)}.hero-card{position:relative;background:linear-gradient(145deg,rgba(17,39,61,.96),rgba(9,23,39,.96));border:1px solid var(--line);border-radius:24px;padding:27px;box-shadow:0 25px 90px rgba(0,0,0,.28);overflow:hidden}.hero-card:before{content:"";position:absolute;width:210px;height:210px;border:1px solid rgba(85,230,208,.22);border-radius:50%;right:-65px;top:-75px;box-shadow:0 0 0 22px rgba(85,230,208,.025),0 0 0 45px rgba(85,230,208,.02)}.shield{width:62px;height:62px;border-radius:18px;display:grid;place-items:center;background:var(--glow);color:var(--cyan);font-size:29px;margin-bottom:20px}.hero-card h3{font:600 21px "Space Grotesk";margin-bottom:7px}.hero-card p{color:var(--muted);font-size:13px}.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}.mini{padding:13px;background:rgba(255,255,255,.035);border:1px solid var(--line);border-radius:12px}.mini b{display:block;font:600 19px "Space Grotesk";color:var(--cyan)}.mini small{color:var(--muted);font-size:11px}
+    section{padding:68px 0;border-top:1px solid var(--line)}.section-head{margin-bottom:28px}.kicker{color:var(--cyan);font-size:11px;letter-spacing:2px;font-weight:700;text-transform:uppercase}.section-head h2{font:700 34px "Space Grotesk";letter-spacing:-1px;margin:7px 0}.section-head p{color:var(--muted);max-width:650px;margin:0}.about{display:grid;grid-template-columns:1fr 1fr;gap:30px}.about-box,.card{background:linear-gradient(145deg,rgba(16,34,56,.92),rgba(10,25,42,.92));border:1px solid var(--line);border-radius:18px;padding:24px}.about-box p{color:var(--muted);margin:0}.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fact{padding:17px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.025)}.fact span{display:block;color:var(--muted);font-size:11px;margin-bottom:5px}.fact b{font-size:13px}
+    .skillgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.skill{padding:16px 17px;border-radius:13px;background:rgba(15,34,54,.8);border:1px solid var(--line);font-size:13px;font-weight:600}.skill:before{content:"↗";color:var(--cyan);margin-right:9px}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.project{min-height:210px;display:flex;flex-direction:column}.project-top{display:flex;justify-content:space-between;gap:10px;align-items:center}.tag{font-size:10px;color:var(--cyan);background:var(--glow);border:1px solid rgba(85,230,208,.2);border-radius:30px;padding:5px 9px}.project h3{font:600 20px "Space Grotesk";margin:18px 0 8px}.project p{color:var(--muted);font-size:13px;margin-bottom:18px}.project .stack{margin-top:auto;color:#c1d3e6;font-size:11px}
+    .timeline{display:grid;gap:13px}.item{display:grid;grid-template-columns:190px 1fr;gap:20px;padding:20px 22px;border:1px solid var(--line);background:rgba(15,34,54,.65);border-radius:14px}.date{color:var(--cyan);font-size:12px;font-weight:700}.item h3{font:600 16px "Space Grotesk";margin:0 0 5px}.item p{color:var(--muted);font-size:12px;margin:0}.education{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.edu-title{font:600 18px "Space Grotesk"}.edu-sub{color:var(--muted);font-size:13px}.contact{display:grid;grid-template-columns:1fr 1fr;gap:15px}.contact a,.contact div{padding:18px;border:1px solid var(--line);border-radius:14px;background:rgba(15,34,54,.7);font-size:13px}.contact span{display:block;color:var(--muted);font-size:11px;margin-bottom:5px}.contact strong{overflow-wrap:anywhere}.footer{padding:25px 0 35px;color:var(--muted);font-size:11px;display:flex;justify-content:space-between;gap:15px;border-top:1px solid var(--line)}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;padding:70px 0 60px;gap:30px}.hero-card{max-width:520px}.about{grid-template-columns:1fr}.skillgrid{grid-template-columns:repeat(2,1fr)}.navlinks{display:none;position:absolute;top:70px;left:20px;right:20px;padding:18px;background:#0d1b2c;border:1px solid var(--line);border-radius:14px;flex-direction:column;gap:14px;z-index:5}.navlinks.open{display:flex}.menu{display:block}}
+    @media(max-width:560px){.wrap{width:min(100% - 28px,1120px)}.hero{padding-top:55px}h1{letter-spacing:-2px}.lead{font-size:15px}.skillgrid,.projects,.contact{grid-template-columns:1fr}.item{grid-template-columns:1fr;gap:6px}.facts{grid-template-columns:1fr 1fr}.section-head h2{font-size:29px}section{padding:52px 0}.footer{flex-direction:column}}
+  </style>
+</head>
+<body>
+<header class="wrap nav">
+  <a class="brand" href="#home">AHMED<span>.</span></a>
+  <nav class="navlinks" id="navlinks">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Training</a><a href="#contact">Contact</a>
+  </nav>
+  <button class="menu" aria-label="Toggle navigation" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+</header>
+<main>
+  <div class="wrap hero" id="home">
+    <div>
+      <div class="eyebrow"><i class="dot"></i> Cybersecurity · Penetration Testing</div>
+      <h1>Ahmed Elsayed<br><span class="gradient">Penetration Tester</span></h1>
+      <p class="lead">Focused on web, mobile, and network security testing, vulnerability identification, reconnaissance, and security assessment across diverse environments.</p>
+      <div class="actions">
+        <a class="btn primary" href="assets/Ahmed_Elsayed_CV.pdf" target="_blank">↗ View CV</a>
+        <a class="btn" href="assets/Ahmed_Elsayed_CV.pdf" download>↓ Download CV</a>
+        <a class="btn" href="#contact">Contact Me</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <div class="shield">⌁</div>
+      <h3>Security-minded. Detail-driven.</h3>
+      <p>Applying practical testing methodologies to identify weaknesses, understand risk, and improve application and infrastructure security.</p>
+      <div class="mini-grid">
+        <div class="mini"><b>Web</b><small>Application Security</small></div>
+        <div class="mini"><b>Mobile</b><small>Android Security Testing</small></div>
+        <div class="mini"><b>Network</b><small>Scanning & Assessment</small></div>
+        <div class="mini"><b>AD</b><small>Security Fundamentals</small></div>
+      </div>
+    </aside>
+  </div>
+
+  <section id="about"><div class="wrap">
+    <div class="section-head"><div class="kicker">01 / About</div><h2>About Me</h2><p>A brief introduction and academic background.</p></div>
+    <div class="about">
+      <div class="about-box"><p>I am a Computer and Control Engineering student with training in penetration testing and full-stack web development. My learning and project work cover web application, mobile application, and network security testing, along with reconnaissance, vulnerability analysis, and security assessment methodologies.</p></div>
+      <div class="facts">
+        <div class="fact"><span>EDUCATION</span><b>Computer & Control Engineering</b></div>
+        <div class="fact"><span>INSTITUTE</span><b>Higher Institute of Engineering and Technology, Kafr El-Sheikh</b></div>
+        <div class="fact"><span>STUDY PERIOD</span><b>2023 – 2028</b></div>
+        <div class="fact"><span>LOCATION</span><b>Qutour, Gharbia, Egypt</b></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="skills"><div class="wrap">
+    <div class="section-head"><div class="kicker">02 / Capabilities</div><h2>Technical Skills</h2><p>Tools, technologies, and security topics listed in my CV.</p></div>
+    <div class="skillgrid">
+      <div class="skill">Web Application Penetration Testing</div><div class="skill">OWASP Top 10</div><div class="skill">Burp Suite</div>
+      <div class="skill">Nmap</div><div class="skill">Vulnerability Assessment</div><div class="skill">Subdomain Enumeration & Reconnaissance</div>
+      <div class="skill">SQL Injection & XSS</div><div class="skill">CVE Research & Vulnerability Analysis</div><div class="skill">Windows Server Fundamentals</div>
+      <div class="skill">Network Scanning</div><div class="skill">Android Application Security Testing</div><div class="skill">Kali Linux</div>
+      <div class="skill">PowerShell Fundamentals</div><div class="skill">Network Penetration Testing</div><div class="skill">Problem Solving & Analytical Thinking</div>
+      <div class="skill">Teamwork & Communication</div>
+    </div>
+  </div></section>
+
+  <section id="projects"><div class="wrap">
+    <div class="section-head"><div class="kicker">03 / Selected Work</div><h2>Projects</h2><p>Practical project experience described in my CV.</p></div>
+    <div class="projects">
+      <article class="card project">
+        <div class="project-top"><span class="tag">Security Assessment</span><span class="date">10/2026</span></div>
+        <h3>Web Application Penetration Testing</h3>
+        <p>Conducted a security assessment of a deliberately vulnerable web application, identifying and analyzing web security vulnerabilities through practical penetration testing techniques.</p>
+        <div class="stack">Web Security · Vulnerability Analysis · Manual Testing</div>
+      </article>
+      <article class="card project">
+        <div class="project-top"><span class="tag">Development · Security</span><span class="date">10/2026 – 12/2026</span></div>
+        <h3>CVE-Scanner</h3>
+        <p>Developed a security assessment tool that automates subdomain discovery and reconnaissance, identifies website technologies, and analyzes web pages to assess potential CVE exposure based on detected technologies, versions, and multiple vulnerability-matching factors.</p>
+        <div class="stack">Reconnaissance · Technology Detection · CVE Research</div>
+      </article>
+    </div>
+  </div></section>
+
+  <section id="experience"><div class="wrap">
+    <div class="section-head"><div class="kicker">04 / Learning Path</div><h2>Courses & Training</h2><p>Specialized training and academic development.</p></div>
+    <div class="timeline">
+      <div class="item"><div class="date">07/2026 – 12/2026</div><div><h3>Penetration Testing Training — Digital Egypt Pioneers Initiative (DEPI)</h3><p>Web, mobile, and network security testing; Active Directory security assessment; penetration testing tools; vulnerability identification and assessment methodologies. Provider/location as stated in CV: Global Knowledge.</p></div></div>
+      <div class="item"><div class="date">08/2026 – 11/2026</div><div><h3>Web Application Security Training — TIPS Hindawi</h3><p>Web application security fundamentals, common web vulnerabilities, and penetration testing methodologies for identifying and assessing security weaknesses.</p></div></div>
+      <div class="item"><div class="date">01/2026 – 04/2026</div><div><h3>CCNA Training — NTI</h3><p>OSI and TCP/IP models, IP addressing and subnetting, VLANs, routing protocols, NAT, ACLs, network troubleshooting, and Cisco Packet Tracer labs.</p></div></div>
+      <div class="item"><div class="date">02/2025 – 06/2025</div><div><h3>Full Stack Web Development Using .NET — ITI</h3><p>C#, ASP.NET Core MVC, Web API, Entity Framework Core, SQL Server, database design, backend development, and responsive web applications.</p></div></div>
+    </div>
+  </div></section>
+
+  <section id="education"><div class="wrap">
+    <div class="section-head"><div class="kicker">05 / Education</div><h2>Education</h2></div>
+    <div class="card education"><div><div class="edu-title">Bachelor of Computer and Control Engineering</div><div class="edu-sub">Higher Institute of Engineering and Technology, Kafr El-Sheikh</div></div><div class="date">2023 – 2028</div></div>
+  </div></section>
+
+  <section id="contact"><div class="wrap">
+    <div class="section-head"><div class="kicker">06 / Get in Touch</div><h2>Contact</h2><p>For opportunities, collaboration, and professional inquiries.</p></div>
+    <div class="contact">
+      <a href="mailto:ahmedelsed36@gmail.com"><span>EMAIL</span><strong>ahmedelsed36@gmail.com</strong></a>
+      <a href="tel:+201017565474"><span>PHONE</span><strong>+20 101 756 5474</strong></a>
+      <a href="https://www.linkedin.com/in/ahmed-elsayed-ahmed-44376424b" target="_blank" rel="noopener"><span>LINKEDIN</span><strong>Ahmed Elsayed — LinkedIn ↗</strong></a>
+      <div><span>LOCATION</span><strong>Qutour, Gharbia Governorate, Egypt</strong></div>
+    </div>
+  </div></section>
+</main>
+<footer class="wrap footer"><span>© <span id="year"></span> Ahmed Elsayed. All rights reserved.</span><span>Built with care · Responsive Portfolio</span></footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();document.querySelectorAll(".navlinks a").forEach(a=>a.addEventListener("click",()=>document.getElementById("navlinks").classList.remove("open")));</script>
+</body>
+</html>
